@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven "gradle"
+        gradle "gradle"
     }
     environment{
         VERSION = "${env.BUILD_ID}"
