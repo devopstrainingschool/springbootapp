@@ -10,7 +10,7 @@ pipeline {
     }
     stages {
         stage('clean') {
-
+            dir("spring-boot-app"){
             steps {
               
             
@@ -20,6 +20,7 @@ pipeline {
             }
 
             
+        }
         }
         stage('Build') {
             steps {
