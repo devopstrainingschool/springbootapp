@@ -15,7 +15,7 @@ pipeline {
               
             
                
-                sh "./gradlew  clean"
+                sh "gradle  clean"
 
             }
 
@@ -26,7 +26,7 @@ pipeline {
               
                 
                
-                sh "./gradlew  build"
+                sh "gradle  build"
 
             }
 
