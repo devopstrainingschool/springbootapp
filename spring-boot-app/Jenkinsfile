@@ -12,15 +12,15 @@ pipeline {
         stage('clean') {
             
             steps {
-              dir("spring-boot-app"){
+             
             
-               
+               sh "gradle init"
                 sh "gradle  clean"
 
             }
 
             
-        }
+        
         }
         stage('Build') {
             steps {
